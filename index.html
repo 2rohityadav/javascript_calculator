@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Template - Rohit Yadav</title>
+	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css"/>-->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container-fluid">
+	<div class="row">
+		<div id="calc-contain" class="absolute-center is-responsive">
+			<form name="calculator">
+				<div class="row">
+					<input type="text" name="answer" value=""/>
+				</div>
+				<div class="tableCell">
+				<div class="row">
+					<input type="button" class="btn btn-default btn-md" value=" 7 " onclick="calculator.answer.value += '7'"/>
+					<input type="button" class="btn btn-default btn-md" value=" 8 " onclick="calculator.answer.value += '8'"/>
+					<input type="button" class="btn btn-default btn-md" value=" 9 " onclick="calculator.answer.value += '9'"/>
+					<input type="button" class="btn btn-primary btn-md" value=" + " onclick="calculator.answer.value += '+'"/>
+				</div>
+				
+				<div class="row">
+					<input type="button" class="btn btn-default btn-md" value=" 4 " onclick="calculator.answer.value += '4'"/>
+					<input type="button" class="btn btn-default btn-md" value=" 5 " onclick="calculator.answer.value += '5'"/>
+					<input type="button" class="btn btn-default btn-md" value=" 6 " onclick="calculator.answer.value += '6'"/>
+					<input type="button" class="btn btn-primary btn-md" value=" - " onclick="calculator.answer.value += '-'"/>
+				</div>
+				
+				<div class="row">
+					<input type="button" class="btn btn-default btn-md" value=" 1 " onclick="calculator.answer.value += '1'"/>
+					<input type="button" class="btn btn-default btn-md" value=" 2 " onclick="calculator.answer.value += '2'"/>
+					<input type="button" class="btn btn-default btn-md" value=" 3 " onclick="calculator.answer.value += '3'"/>
+					<input type="button" class="btn btn-primary btn-md" value=" * " onclick="calculator.answer.value += '*'"/>
+				</div>
+				
+				<div class="row">
+					<input type="button" class="btn btn-default btn-md" value=" ( " onclick="calculator.answer.value += '('"/>
+					<input type="button" class="btn btn-default btn-md" value=" 0 " onclick="calculator.answer.value += '0'"/>
+					<input type="button" class="btn btn-default btn-md" value=" ) " onclick="calculator.answer.value += ')'"/>
+					<input type="button" class="btn btn-primary btn-md" value=" / " onclick="calculator.answer.value += '/'"/>
+				</div>
+				
+				<div class="row">
+					<input type="button" class="btn btn-warning btn-md" value=" C " onclick="calculator.answer.value = ''"/>
+					<input type="button" class="btn btn-default btn-md" value=" . " onclick="calculator.answer.value += '.'"/>
+					<input type="button" class="btn btn-warning btn-md" value=" <= " onclick="calculator.answer.value = calculator.answer.value.substr(0, calculator.answer.value.length - 1)"/>
+					<input type="button" class="btn btn-success btn-md" value=" = " onclick="calculator.answer.value = eval(document.calculator.answer.value)"/>
+				</div>
+			  </div>
+				
+			</form>
+		</div>
+
+   </div>	
+	<!--<script src="custom.js"></script>-->
+</body>
