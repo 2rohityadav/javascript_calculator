@@ -3,4 +3,4 @@ calculator - purely in javascript
 
 ---
 
-[Live Calculator](https://rohyadav.github.io/javascript_calculator/index.html){:target="_blank"}
+[Live Calculator](https://rohyadav.github.io/javascript_calculator/index.html)
